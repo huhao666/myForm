@@ -1,0 +1,25 @@
+<view class="forms">
+    <view class="warning">小提示：输入型表单只需输入标题，单选和多选请添加列表项</view>
+    <view class="title">请在下方输入标题：</view>
+    <input type="text" bindinput="handleTitleInput" value="{{title}}" placeholder="请输入标题" />
+    <view class="btn" wx:if="{{!imgUrl}}" bindtap="uploadImg">上传描述图片</view>
+    <image class="img" wx:if="{{imgUrl}}" mode="aspectFit"  src="{{imgUrl}}" lazy-load></image>
+    <view wx:if="{{type !== 'input'}}">
+        <view class="options-list">
+            <view class="option-item" wx:for="{{options}}" wx:for-item="opt" wx:key="index">
+                <view><mp-badge content="{{type === 'radio'? '单选' : '多选'}}"></mp-badge> {{opt}}</view>
+                <mp-icon data-idx="{{index}}" bindtap="delOptionItem" class="del-option" icon="close2" size="{{30}}" color="red"></mp-icon>
+            </view>
+        </view>
+        <view class="title">请在下方输入<text wx:if="{{type === 'radio'}}">单</text><text wx:if="{{type === 'checkbox'}}">多</text>选的项：</view>
+        <view class="options-control">
+            <input class="options-control-input" type="text" bindinput="handleOptionInput" value="{{option}}" placeholder="请输入选项" />
+            <mp-icon class="mp-icon" icon="done" size="{{30}}" color="green" bindtap="inputOption"></mp-icon>
+            <mp-icon class="mp-icon" icon="close" size="{{30}}" color="red" bindtap="clearOption"></mp-icon>
+        </view>
+    </view>
+    <view>
+        <view class="btn" bindtap="buildFormData">生成表单项</view>
+        <view class="close-btn" bindtap="closeBuildForm">取消生成</view>
+    </view>
+</view>

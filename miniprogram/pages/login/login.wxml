@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+	<!--pages/login/login.wxml-->
+	<view class="box">
+		<view class="loginText">Login</view>
+		<form bindsubmit='loginForm'>
+			<view class="inputBox">
+				<image src="../../images/username.png"> </image>
+				<input auto-focus placeholder="请输入账号" name="account" />
+			</view>
+			<view class="inputBox">
+				<image src="../../images/password.png"> </image>
+				<input password type="text" placeholder="请输入密码" name="password" />
+			</view>
+			<button formType="submit">login</button>
+		</form>
+	</view>
+</view>

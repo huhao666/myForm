@@ -1,0 +1,8 @@
+<view>
+    <view class="container">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+    </view>
+    <view class="imgbox">
+        <image wx:if="{{imgUrl}}" src="{{imgUrl}}" mode="aspectFit"></image>
+    </view>
+</view>

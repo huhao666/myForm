@@ -1,0 +1,23 @@
+<view class="form-render">
+    <mp-cells title="{{index + 1 + '. ' + title}}" wx:if="{{type === 'input'}}">
+        <image wx:if="{{imgUrl}}" src="{{imgUrl}}" mode="aspectFit"></image>
+        <textarea class="textarea" value="{{textareaValue}}" bindinput="textChange" wx:if="{{type === 'input' && canEdit}}"></textarea>
+        <view class="content" wx:if="{{!canEdit}}">{{textValue}}</view>
+    </mp-cells>
+    
+    <mp-cells title="{{index + 1 + '. ' + title}}" wx:if="{{type === 'radio'}}">
+        <image wx:if="{{imgUrl}}" src="{{imgUrl}}" mode="aspectFit"></image>
+        <mp-checkbox-group wx:if="{{canEdit}}" prop="radio" multi="{{false}}" bindchange="radioChange">
+            <mp-checkbox wx:for="{{options}}" wx:key="value" label="{{item.name}}" value="{{item.value}}" checked="{{item.checked}}"></mp-checkbox>
+        </mp-checkbox-group>
+        <view class="content" wx:if="{{!canEdit}}">{{optionsValue}}</view>
+    </mp-cells>
+    
+    <mp-cells title="{{index + 1 + '. ' + title}}" wx:if="{{type === 'checkbox'}}">
+        <image wx:if="{{imgUrl}}" src="{{imgUrl}}" mode="aspectFit"></image>
+        <mp-checkbox-group wx:if="{{canEdit}}" prop="checkbox" multi="{{true}}" bindchange="checkboxChange">
+            <mp-checkbox wx:for="{{options}}" wx:key="index" label="{{item.name}}" value="{{item.value}}" checked="{{item.checked}}"></mp-checkbox>
+        </mp-checkbox-group>
+        <view class="content" wx:if="{{!canEdit}}" wx:key="index">{{optionsValue}}</view>
+    </mp-cells>
+</view>

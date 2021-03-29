@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "新增表单",
+  "usingComponents": {
+    "mp-actionSheet": "weui-miniprogram/actionsheet/actionsheet",
+    "build-from": "../../component/BuildFrom/BuildFrom",
+    "from-render": "../../component/FormRender/FormRender"
+  }
+}

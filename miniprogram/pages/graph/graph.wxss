@@ -1,0 +1,21 @@
+/* miniprogram/pages/graph/graph.wxss */
+.container {
+    width: 100%;
+    height: 600rpx;
+    padding-top: 20rpx;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40rpx;
+    padding: 10rpx;
+}
+
+.imgbox {
+    padding: 20rpx;
+}
+
+image {
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+<view class="listItem">
+	<view>
+		<mp-badge wx:if="{{mode !== 2}}" content="{{state == 0 ? '进行中': '已结束'}}" />
+		{{title}}
+	</view>
+	<view class="operation">
+		<view wx:if="{{mode === 2}}" bindtap="edit" class="operation-button" hover-class="view-hover">编辑</view>
+		<view wx:if="{{mode === 2}}" bindtap="publishForm" class="operation-button" hover-class="view-hover">发布</view>
+		<view wx:if="{{mode === 2}}" class="operation-button" bindtap="deleteTpl" hover-class="view-hover">删除</view>
+		<view wx:if="{{mode === 0}}" bindtap="handlePreview" class="operation-button" hover-class="view-hover">预览</view>
+		<view wx:if="{{mode === 0}}" bindtap="closeFrom" class="operation-button" hover-class="view-hover">结束</view>
+		<!-- <view wx:if="{{mode === 1}}" class="operation-button" hover-class="view-hover">下载</view> -->
+		<view wx:if="{{mode === 1}}" bindtap="handleResult" class="operation-button" hover-class="view-hover">查看结果</view>
+		<view wx:if="{{mode === 1}}" class="operation-button" bindtap="delFrom" hover-class="view-hover">删除</view>
+		<view wx:if="{{mode === 1}}" class="operation-button" bindtap="exportExcel" hover-class="view-hover">导出</view>
+	</view>
+	<view>
+		<mp-dialog show="{{showOneButtonDialog}}" bindbuttontap="tapDialogButton" buttons="{{oneButton}}">
+			<view>test content1</view>
+		</mp-dialog>
+	</view>
+</view>

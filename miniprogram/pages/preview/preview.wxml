@@ -1,0 +1,35 @@
+<view>
+	<!-- 旧版 -->
+	<!-- <view class="cover" wx:if="{{masking}}">
+		<button class="mini-btn" size="mini" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>
+	</view> -->
+
+	<!--  新版 -->
+	<view>
+		<mp-dialog title=" " mask-closable="{{closableShow}}" show="{{dialogShow}}">
+			<view>
+				<view class="account">
+					姓名：<input bindinput="userNameInput" value="{{inputValue}}" type="text" placeholder="请输入账号"></input>
+				</view>
+				<view class="password">
+					工号：<input bindinput="jobNumberInput" value="{{inputValue}}" type="number" placeholder="请输入工号"></input>
+				</view>
+
+				<view class="btn">
+					<button type="default" size="mini" bindtap="cancel">重置</button>
+					<button type="primary" size="mini" bindtap="getInfo">确认</button>
+				</view>
+
+			</view>
+		</mp-dialog>
+	</view>
+
+
+
+	<view class="title">{{title}}</view>
+	<view class="list">
+		<form-render imgUrl="{{item.imgUrl}}" wx:for="{{list}}" canEdit="{{canEdit}}" wx:key="index" bind:formItemDataChange="handleData" title="{{item.title}}" type="{{item.type}}" index="{{index}}" options="{{item.options}}" textValue="{{item.textValue}}" optionsValue="{{item.optionsValue}}"></form-render>
+	</view>
+	<view wx:if="{{canEdit}}" class="save-btn" hover-class="button-hover" bindtap="submitForm">提交</view>
+	{{res}}
+</view>

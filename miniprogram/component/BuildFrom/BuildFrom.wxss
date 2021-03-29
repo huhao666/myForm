@@ -1,0 +1,63 @@
+.warning {
+    color: tomato;
+    font-size: 26rpx;
+    text-align: center;
+}
+
+.btn {
+    height: 80rpx;
+    width: 60%;
+    text-align: center;
+    line-height: 80rpx;
+    background-color: #07c160;
+    color: white;
+    border-radius: 10rpx;
+    margin: 0 auto;
+    margin-top: 20rpx;
+}
+
+.close-btn {
+    background-color: red;
+    height: 80rpx;
+    width: 60%;
+    text-align: center;
+    line-height: 80rpx;
+    color: white;
+    border-radius: 10rpx;
+    margin: 0 auto;
+    margin-top: 20rpx;
+}
+
+.options-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mp-icon {
+    flex: 1;
+}
+
+.options-control-input {
+    flex: 10;
+}
+
+.title {
+    color: #666;
+    font-weight: bold;
+    margin: 20rpx 0;
+}
+
+.option-item {
+    padding: 10rpx;
+    background-color: #efefef;
+    margin-bottom: 10rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+}

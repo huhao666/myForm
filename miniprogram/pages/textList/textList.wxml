@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="title">{{title}}</view>
+     <image wx:if="{{imgUrl}}" src="{{imgUrl}}" mode="aspectFit"></image>
+    <view class="list">
+        <view class="list-item" wx:for="{{list}}" wx:key="index">{{index + 1}}. {{item}}</view>
+    </view>
+</view>

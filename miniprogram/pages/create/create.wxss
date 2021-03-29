@@ -1,0 +1,63 @@
+/* miniprogram/pages/create/create.wxss */
+.create {
+    padding: 20rpx;
+}
+
+/* 虚线框 */
+.virtual-box {
+    height: 200rpx;
+    line-height: 200rpx;
+    text-align: center;
+    color: #aaa;
+    border: 2rpx dashed #eee;
+}
+
+/* 添加按钮 */
+.add-field {
+    height: 80rpx;
+    width: 80%;
+    text-align: center;
+    line-height: 80rpx;
+    background-color: #07c160;
+    color: white;
+    border-radius: 10rpx;
+    margin: 0 auto;
+    margin-top: 20rpx;
+}
+
+/* 删除列表渲染的子组件 */
+.form-item-box {
+    position: relative;
+}
+
+.del-form-item {
+    position: absolute;
+    right: 20rpx;
+    color: white;
+    border-radius: 10rpx;
+    background-color: red;
+    padding: 0 10rpx;
+    font-size: 24rpx;
+    z-index: 1000;
+    top: -2rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+
+cover-view {
+    text-align: center;
+    width: 100%;
+    height: 100rpx;
+    position: fixed;
+    bottom: 0;
+    line-height: 90rpx;
+    background-color: #07c160;
+    color: white;
+    left: 0;
+} 
+
+.title {
+    text-align: center;
+    margin-bottom: 20rpx;
+    font-weight: bold;
+}

@@ -1,0 +1,18 @@
+<view class="create">
+    <view style="padding-bottom: 110rpx;">
+        <input class="title" type="text" bindinput="handleTitleInput" value="{{title}}" placeholder="请输入标题" />
+        <view class="virtual-box" wx:if="{{!formItemList.length}}">点击下方按钮添加表单项</view>
+        <view class="form-item-list">
+            <view class="form-item-box" wx:for="{{formItemList}}" wx:key="index" wx:for-item="item">
+                <view class="del-form-item" bindtap="delFromItem" data-idx="{{index}}">删除此项</view>
+                <from-render imgUrl="{{item.imgUrl}}" type="{{item.type}}" title="{{item.title}}" index="{{index}}" canEdit="{{true}}" options="{{item.options}}"></from-render>
+            </view>
+        </view>
+        <build-from wx:if="{{showBuildForm}}" type="{{type}}" bind:buildFormData="getFormData" bind:closeBuildFormData="closeBuildFormData"></build-from>
+        <view wx:if="{{!showBuildForm}}" class="add-field" hover-class="button-hover" bindtap="openActionsheet">
+            点击添加表单项
+        </view>
+    </view>
+    <cover-view class="save-btn" bindtap="saveForms">保存表单</cover-view>
+    <mp-actionSheet title="选择表单项类型" show-cancel show="{{showActionsheet}}" actions="{{groups}}" bindactiontap="clickActionsheet"></mp-actionSheet>
+</view>

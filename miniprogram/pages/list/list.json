@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "已发布表单",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "mp-tabs": "@miniprogram-component-plus/tabs/index",
+    "ListItem": "../../component/ListItem/ListItem"
+  }
+}

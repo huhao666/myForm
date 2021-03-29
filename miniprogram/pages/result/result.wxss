@@ -1,0 +1,30 @@
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40rpx;
+  padding: 10rpx;
+}
+
+.list {
+  padding: 20rpx;
+}
+
+.list-item {
+  padding: 20rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #eee;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+cover-view {
+  text-align: center;
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  line-height: 90rpx;
+  background-color: #07c160;
+  color: white;
+}

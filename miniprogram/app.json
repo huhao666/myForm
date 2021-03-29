@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/list/list",
+    "pages/result/result",
+    "pages/template/template",
+    "pages/create/create",
+    "pages/preview/preview",
+    "pages/textList/textList",
+    "pages/graph/graph"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "myForm",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/template/template",
+        "text": "模板",
+        "iconPath": "images/moban.png",
+        "selectedIconPath": "images/moban-red.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "表单",
+        "iconPath": "images/biaodan.png",
+        "selectedIconPath": "images/biaodan-red.png"
+      }
+    ]
+  }
+}

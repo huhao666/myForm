@@ -1,0 +1,7 @@
+<view class="result">
+	<view class="title">{{title}}</view>
+	<view class="list">
+		<view bindtap="gotoResult" data-tid="{{index}}" data-imgUrl="{{item.imgUrl}}" data-type="{{item.type}}" class="list-item" wx:for="{{list}}" wx:key="index">{{index + 1}}. {{item.title}}</view>
+	</view>
+	<!-- <cover-view hover-class="button-hover" bindtap="back">返回上页</cover-view> -->
+</view>

@@ -1,0 +1,6 @@
+<view>
+  <view class="list">
+    <list-item wx:for="{{templateList}}" wx:key="id" bind:delete="deleteTemplate" idx="{{index}}" title="{{item.title}}" mode="{{2}}" tid="{{item.id}}"></list-item>
+  </view>
+  <cover-view hover-class="button-hover" bindtap="addForm">新增</cover-view>
+</view>

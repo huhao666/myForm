@@ -1,0 +1,14 @@
+<view>
+  <mp-tabs 
+    class="mp-tabs"
+    tabs="{{tabs}}" 
+    activeTab="{{activeTab}}"
+    bindtabclick="onTabCLick"
+    bindchange="onChange"
+    activeClass="tab-bar-title__selected"
+  >
+  </mp-tabs>
+  <view class="form-list">
+    <ListItem wx:for="{{list}}" tid="{{item._id}}" bind:delete="deleteFrom" idx="{{index}}" mode="{{activeTab}}" wx:for-item="item" state="{{item.state}}" wx:key="id" title="{{item.title}}"></ListItem>
+  </view>
+</view>  

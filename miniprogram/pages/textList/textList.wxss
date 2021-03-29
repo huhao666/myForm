@@ -1,0 +1,23 @@
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40rpx;
+    padding: 10rpx;
+}
+
+.list {
+    padding: 20rpx;
+}
+
+.list-item {
+    padding: 20rpx;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #eee;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+}
+
+image {
+    width: 100%;
+}

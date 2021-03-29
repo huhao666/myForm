@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "表单模板",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "list-item": "../../component/ListItem/ListItem",
+    "mp-halfScreenDialog": "weui-miniprogram/half-screen-dialog/half-screen-dialog"
+  }
+}

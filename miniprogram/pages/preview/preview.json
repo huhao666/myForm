@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "中力小调查",
+  "usingComponents": {
+    "form-render": "../../component/FormRender/FormRender",
+    "mp-dialog": "weui-miniprogram/dialog/dialog"
+  }
+}

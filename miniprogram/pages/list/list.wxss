@@ -1,0 +1,50 @@
+page{
+    background-color: #FFFFFF;
+    height: 100%;
+}
+.mp-tabs {
+    height: 100%;
+}
+
+.weui-tabs swiper {
+  display: none;
+}
+
+.weui-tabs-bar__wrp {
+    border-bottom: 1px solid #eee;
+    margin-top: 10px;
+}
+
+.weui-tabs-bar__content {
+    display: flex;
+    flex-direction: row;
+}
+
+.weui-tabs-bar__item {
+    text-align: center;
+    flex: 1;
+}
+
+.tab-content {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.weui-tabs-bar__title {
+    flex: 1;
+}
+
+.tab-bar-title__selected {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-list {
+    padding: 20rpx;
+    padding-bottom: 110rpx;
+}
+
+
+
